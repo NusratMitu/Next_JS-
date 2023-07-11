@@ -1,16 +1,8 @@
-import Head from 'next/head'
 
-export default function Home() {
+const Home = () => {
   return (
-    <div>
-      <Head>
-        <title> Next App</title>
-        
-      </Head>
-      <main>
-        <h1>Welcome</h1>
-      </main>
-    
-    </div>
+    <div>index</div>
   )
 }
+
+export default Home
