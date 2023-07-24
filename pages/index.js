@@ -20,6 +20,9 @@ const Home = () => {
     <Link href="/docs">
    Docs
     </Link>
+    <Link href="/users">
+   Users
+    </Link>
     <button onClick={handleClick}>
      Read blogs
     </button>
