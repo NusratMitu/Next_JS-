@@ -15,13 +15,20 @@ const Home = () => {
     <div>
       <h1>Home</h1>
     <Link href="/blog">
-   Blog
+      <h4>Blog</h4>
+   
     </Link>
     <Link href="/docs">
-   Docs
+    <h4>Docs</h4>
+   
     </Link>
     <Link href="/users">
-   Users
+    <h4>Users</h4>
+   
+    </Link>
+    <Link href="/posts">
+    <h4>Posts</h4>
+   
     </Link>
     <button onClick={handleClick}>
      Read blogs
