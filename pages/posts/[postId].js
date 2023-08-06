@@ -43,7 +43,7 @@ export async function getStaticProps(context) {
     const data = await response.json()
     return {
         props: {
-            post: data
+            post: data.slice(0,3)
         }
     }
 
