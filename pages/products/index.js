@@ -1,14 +1,14 @@
 import Link from "next/link";
 
-const PostList = ({posts}) => {
+const ProductList = ({products}) => {
     return (
       <>
-      <h1>list of posts</h1>
+      <h1>list of products</h1>
       {
-          posts.map((post) =>
+          products.map((post) =>
           <div key={post.id}>
             <h2>  
-                <Link href={`/posts/${post.id}`}>
+                <Link href={`/products/${post.id}`}>
                 {post.id} :{post.title}
                 </Link>
             </h2>
@@ -22,14 +22,14 @@ const PostList = ({posts}) => {
     )
   }
   
-  export default PostList;
+  export default ProductList;
   
   export async function getStaticProps () {
-      const response = await fetch(`https://jsonplaceholder.typicode.com/posts`)
+      const response = await fetch(`http://localhost:4000/products`)
       const data = await response.json();
       return {
           props: {
-              posts: data.slice(0,3)
+              products: data
           }
       }
   }
