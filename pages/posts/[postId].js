@@ -9,7 +9,7 @@ const PostDetails = ({post}) => {
   return (
     <>
     <h1>Post Detail</h1>
-    <h2>{post.id}. {post.title}</h2>
+    <h2>{post.id}: {post.title}</h2>
     <p>{post.body}</p>
     </>
   )
